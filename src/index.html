@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>product page</title>
+
+    <link
+      href="../node_modules/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .imgSize {
+        height: 30px;
+      }
+      .fntSize {
+        font-size: small;
+      }
+      .inp {
+        background-color: #262831;
+        height: 50px;
+        border-radius: 10px;
+        width: 75%;
+        padding: 20px;
+        border: none;
+      }
+      .btnForm {
+        background-color: #262831;
+        border-radius: 10px;
+        width: 25%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-light shadow-sm">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-black fs-3 ps-5 fw-bold"
+          >Jevelin</a
+        >
+
+        <ul class="navbar-nav me-3 fw-bold">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"
+              >Home
+              <img
+                src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+              />
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"
+              >Blog
+              <img src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+            /></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"
+              >Portofolio
+              <img src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+            /></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="#"
+              >Shop
+              <img src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+            /></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"
+              >Variations
+              <img src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+            /></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#"
+              >Elements
+              <img src="../node_modules/bootstrap-icons/icons/chevron-down.svg"
+            /></a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link">
+              <img src="../node_modules/bootstrap-icons/icons/cart.svg" />
+            </a>
+          </li>
+          <li class="nav-item mx-2">
+            <a href="#" class="nav-link">
+              <img src="../node_modules/bootstrap-icons/icons/search.svg" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- main content -->
+    <div class="container-fluid">
+      <!--  -->
+      <!-- navigation bar -->
+      <div id="navigationBlock" class="row mt-5 pb-2 ps-5 border-bottom">
+        <p class="text-secondary d-flex align-items-center">
+          <span>Home</span>
+          <img
+            class="mx-1"
+            src="../node_modules/bootstrap-icons/icons/chevron-right.svg"
+          />
+          <span>Shop</span>
+          <img
+            class="mx-1"
+            src="../node_modules/bootstrap-icons/icons/chevron-right.svg"
+          />
+          <span class="text-dark fw-blod fs-6">Android Phone</span>
+        </p>
+      </div>
+
+      <!-- Product container -->
+      <div class="row">
+        <div class="col p-5">
+          <img src="phone.png" alt="" />
+        </div>
+        <div class="col p-5">
+          <!-- phone name -->
+          <div class="row">
+            <div class="col"><p class="fs-1 fw-bold">Android Phone</p></div>
+          </div>
+
+          <!-- phone price -->
+          <div class="row d-flex align-items-center">
+            <div
+              class="col-2 text-muted fs-5 fw-bold"
+              style="text-decoration: line-through"
+            >
+              $199.00
+            </div>
+            <div class="col-6 fw-bold fs-4">$179.00</div>
+            <div class="col-4 fntSize">
+              <span style="color: #f7d01c">
+                &#9733; &#9733; &#9733; &#9733; &#9733;</span
+              >1(review)
+            </div>
+          </div>
+
+          <!-- description -->
+          <div class="row pt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            illo labore unde facere quisquam optio beatae vel neque quas qui
+            saepe rem vitae aliquid voluptatem, quasi inventore consectetur.
+            Aliquid, dolore.
+          </div>
+
+          <!-- buttons -->
+          <div class="row mt-4">
+            <div class="col-6 d-flex align-items-center">
+              <div class="rounded-circle py-1 px-2 bg-secondary">
+                <img
+                  src="../node_modules/bootstrap-icons/icons/arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <span class="mx-2">1</span>
+
+              <div class="rounded-circle py-1 px-2 bg-secondary">
+                <img
+                  src="../node_modules/bootstrap-icons/icons/arrow-up.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <button class="btn btn-primary fntSize fw-bold">
+                <img
+                  src="../node_modules/bootstrap-icons/icons/cart.svg"
+                  alt=""
+                />
+                Add to cart
+              </button>
+            </div>
+          </div>
+
+          <!-- specs -->
+          <div class="row">
+            <div class="col-4 pt-4 fw-bold">
+              <p>SKU: <span class="text-muted ps-1">12</span></p>
+              <p>Category: <span class="text-primary ps-1">12</span></p>
+              <p>Tag: <span class="text-muted ps-1">Screen</span></p>
+              <button
+                class="btn btn-secondary text-black fw-bold text-muted"
+                style="background-color: #f2f2f2; border: none"
+              >
+                <img
+                  class="me-2"
+                  src="../node_modules/bootstrap-icons/icons/share.svg"
+                  alt=""
+                />
+                Share
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="row d-flex justify-content-end">
+            <div class="col-6">
+              <div class="d-flex fw-bold">
+                <span class="p-2 text-primary">Description</span>
+                <span class="p-2">Reviews(1)</span>
+              </div>
+              <div class="progress" style="height: 2px">
+                <div
+                  class="progress-bar"
+                  style="width: 20%; height: 10px"
+                ></div>
+              </div>
+              <div class="mt-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum
+                voluptatem ab quia exercitationem iure repudiandae numquam do
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row p-5 mt-4">
+        <div class="col mt-5 ms-5">
+          <div class="row">
+            <div class="col-2">
+              <img
+                style="height: 40px"
+                src="../node_modules/bootstrap-icons/icons/cart.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-9">
+              <span>Free shipping</span>
+              <p>for purchases over $50</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="row">
+            <div class="col-2">
+              <img
+                style="height: 40px"
+                src="../node_modules/bootstrap-icons/icons/shield-x.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-9">
+              <span>Secure payment</span>
+              <p>for online transactions</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <div class="row">
+            <div class="col-2">
+              <img
+                style="height: 40px"
+                src="../node_modules/bootstrap-icons/icons/lightning-charge.svg"
+                alt=""
+              />
+            </div>
+            <div class="col-9">
+              <span class="fw-bold">Same dayshipping</span>
+              <p class="text-muted">for purchases till 6:00 EST</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="row" style="background-color: #1b1d26">
+        <div class="row">
+          <div
+            class="col-10 py-5 border-bottom border-secondary mx-auto d-flex align-items-center justify-content-between"
+          >
+            <a href="#" class="navbar-brand text-white fs-3 fw-bold">Jevelin</a>
+            <div>
+              <a href="#"
+                ><img
+                  class="imgSize me-1"
+                  src="../node_modules/bootstrap-icons/icons/twitter.svg"
+              /></a>
+              <a href="#">
+                <img
+                  class="imgSize me-1"
+                  src="../node_modules/bootstrap-icons/icons/youtube.svg"
+                />
+              </a>
+              <a href="#"
+                ><img
+                  class="imgSize me-1"
+                  src="../node_modules/bootstrap-icons/icons/instagram.svg"
+              /></a>
+              <a href="#">
+                <img
+                  class="imgSize me-1"
+                  src="../node_modules/bootstrap-icons/icons/whatsapp.svg"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- footer 2 -->
+        <div class="row text-white py-3 px-5">
+          <div class="col ps-5">
+            <h2 class="fs-2 p-1 mb-3">
+              Start Crafting Epic
+              <span class="fw-bold fs-3">Websites</span> Today!
+            </h2>
+            <button class="btn btn-primary fntSize fw-bold">
+              Purchase theme
+            </button>
+          </div>
+          <div class="col p-2">
+            <h3 class="fs-4 mb-3">Useful</h3>
+            <p class="fntSize">Documentation Intro video Showcase Buy theme</p>
+          </div>
+          <div class="col ms-4 p-2">
+            <h3 class="fs-4 mb-3">Keep in touch</h3>
+            <p class="fntSize">
+              Nippon, Osaka, Crimson street 78-42 <br />
+              (10am-6pm EST, Mon-Fri) <br /><span class="fw-bold"
+                >Support@brand.com</span
+              >
+            </p>
+          </div>
+          <div class="col p-2">
+            <h3 class="fs-5 mb-3">Sign up for newsletter</h3>
+            <form action="" class="d-flex">
+              <input
+                class="inp me-1"
+                type="text"
+                placeholder="E-mail address"
+              />
+              <button class="btnForm text-white fw-bold">Send</button>
+            </form>
+            <p class="text-muted mt-1 pe-5 fntSize">
+              *Information is not disclosed to third parties
+            </p>
+          </div>
+        </div>
+
+        <!-- footer 3 -->
+        <div class="row text-white mt-5 mb-4 py-3 px-5 mx-5">
+          <div class="col-8">
+            <span class="fntSize"
+              >@2021 Jevelin. Crafted by
+              <span class="fw-bold">Shufflehound</span></span
+            >
+          </div>
+          <div class="col fntSize fw-bold">
+            <span class="p-1"> Privacy policy </span>
+            <span class="p-1"> Terms & conditions </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
