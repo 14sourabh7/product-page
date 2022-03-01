@@ -34,6 +34,16 @@
         width: 25%;
         border: none;
       }
+      .positionBox {
+        position: fixed;
+        right: 0;
+        top: 25%;
+        width: 70px;
+        opacity: 60%;
+      }
+      .iconSize {
+        height: 40px;
+      }
     </style>
   </head>
   <body>
@@ -98,6 +108,40 @@
 
     <!-- main content -->
     <div class="container-fluid">
+      <div
+        class="positionBox d-flex flex-column bg-light shadow p-3 mb-5 bg-white rounded"
+      >
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/stack.svg"
+          alt=""
+        />
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/sunglasses.svg"
+          alt=""
+        />
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/back.svg"
+          alt=""
+        />
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/question-circle.svg"
+          alt=""
+        />
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/tropical-storm.svg"
+          alt=""
+        />
+        <img
+          class="p-2 iconSize"
+          src="../node_modules/bootstrap-icons/icons/envelope.svg"
+          alt=""
+        />
+      </div>
       <!--  -->
       <!-- navigation bar -->
       <div id="navigationBlock" class="row mt-5 pb-2 ps-5 border-bottom">
@@ -202,7 +246,7 @@
         </div>
         <div class="col-12">
           <div class="row d-flex justify-content-end">
-            <div class="col-6">
+            <div class="col-sm-12 col-md-6">
               <div class="d-flex fw-bold">
                 <span class="p-2 text-primary">Description</span>
                 <span class="p-2">Reviews(1)</span>
@@ -221,8 +265,10 @@
           </div>
         </div>
       </div>
+
+      <!-- middle sec -->
       <div class="row p-5 mt-4">
-        <div class="col mt-5 ms-5">
+        <div class="col-sm-12 col-md mt-5 ms-5">
           <div class="row">
             <div class="col-2">
               <img
@@ -237,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="col mt-5">
+        <div class="col-sm-12 col-md mt-5">
           <div class="row">
             <div class="col-2">
               <img
@@ -252,7 +298,7 @@
             </div>
           </div>
         </div>
-        <div class="col mt-5">
+        <div class="col-sm-12 col-md mt-5">
           <div class="row">
             <div class="col-2">
               <img
@@ -304,7 +350,7 @@
 
         <!-- footer 2 -->
         <div class="row text-white py-3 px-5">
-          <div class="col ps-5">
+          <div class="col-sm-12 col-md ps-5">
             <h2 class="fs-2 p-1 mb-3">
               Start Crafting Epic
               <span class="fw-bold fs-3">Websites</span> Today!
@@ -313,11 +359,11 @@
               Purchase theme
             </button>
           </div>
-          <div class="col p-2">
+          <div class="col-sm-12 col-md p-2">
             <h3 class="fs-4 mb-3">Useful</h3>
             <p class="fntSize">Documentation Intro video Showcase Buy theme</p>
           </div>
-          <div class="col ms-4 p-2">
+          <div class="col-sm-12 col-md ms-4 p-2">
             <h3 class="fs-4 mb-3">Keep in touch</h3>
             <p class="fntSize">
               Nippon, Osaka, Crimson street 78-42 <br />
@@ -326,7 +372,7 @@
               >
             </p>
           </div>
-          <div class="col p-2">
+          <div class="col-sm-12 col-md text-sm-center p-2">
             <h3 class="fs-5 mb-3">Sign up for newsletter</h3>
             <form action="" class="d-flex">
               <input
